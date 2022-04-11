@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 # scaler = StandardScaler().fit(X)
 # X = pd.DataFrame(scaler.transform(X), columns = X.columns)
 #y = df['class']
-raw_data_path = 'D:/Doctoral_Programs/machineLearning-master/dataset/KI/original.csv'
+raw_data_path = './original.csv'
 
 df = pd.read_csv(raw_data_path)
 
@@ -660,7 +660,7 @@ warnings.filterwarnings("ignore")
 
 
 ```python
-file_name="D:/Doctoral_Programs/machineLearning-master/dataset/KI/original.csv"
+file_name="./original.csv"
 data = pd.read_csv(file_name,  header=0)
 
 ```
@@ -745,7 +745,7 @@ features = feature_score(dict_all)
 
 
 ```python
-features.to_csv("D:/Doctoral_Programs/machineLearning-master/dataset/KI/original_score_all.csv")
+features.to_csv("./original_score_all.csv")
 ```
 
 # Score Features Data Description
@@ -765,7 +765,7 @@ def normfun(x, mu, sigma):
 
 if __name__ == '__main__':
 
-    data = pd.read_csv('D:/Doctoral_Programs/machineLearning-master/dataset/KI/original_score_cancer.csv')
+    data = pd.read_csv('./original_score_cancer.csv')
     length = data['score_max'] 
     mean = length.mean() 
     x = np.arange(0, 1, 0.0001)
@@ -795,7 +795,7 @@ if __name__ == '__main__':
 
 
 ```python
-    data = pd.read_csv('D:/Doctoral_Programs/machineLearning-master/dataset/KI/original_score_healthy.csv') # 载入数据文件
+    data = pd.read_csv('./original_score_healthy.csv') # 载入数据文件
     length = data['score_max'] 
     mean = length.mean() 
     std = length.std()  
@@ -841,7 +841,7 @@ def normfun(x, mu, sigma):
 
 if __name__ == '__main__':
 
-    data = pd.read_csv('D:/Doctoral_Programs/machineLearning-master/dataset/KI/original_score_cancer.csv') # 载入数据文件
+    data = pd.read_csv('./original_score_cancer.csv') # 载入数据文件
     length = data['score_median'] # 获得长度数据集
     mean = length.mean() # 获得数据集的平均值
     std = length.std()   # 获得数据集的标准差
@@ -875,7 +875,7 @@ if __name__ == '__main__':
 
 
 ```python
-    data = pd.read_csv('D:/Doctoral_Programs/machineLearning-master/dataset/KI/original_score_healthy.csv') # 载入数据文件
+    data = pd.read_csv('./original_score_healthy.csv') # 载入数据文件
     length = data['score_median'] # 获得长度数据集
     mean = length.mean() # 获得数据集的平均值
     std = length.std()   # 获得数据集的标准差
@@ -921,7 +921,7 @@ def normfun(x, mu, sigma):
 
 if __name__ == '__main__':
 
-    data = pd.read_csv('D:/Doctoral_Programs/machineLearning-master/dataset/KI/original_score_cancer.csv') # 载入数据文件
+    data = pd.read_csv('./original_score_cancer.csv') # 载入数据文件
     length = data['score_mean']
     mean = length.mean() 
     std = length.std()   
@@ -948,7 +948,7 @@ if __name__ == '__main__':
 
 
 ```python
-    data = pd.read_csv('D:/Doctoral_Programs/machineLearning-master/dataset/KI/original_score_healthy.csv') # 载入数据文件
+    data = pd.read_csv('./original_score_healthy.csv') # 载入数据文件
     length = data['score_mean'] # 获得长度数据集
     mean = length.mean() # 获得数据集的平均值
     std = length.std()   # 获得数据集的标准差
@@ -986,7 +986,7 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
 # set path to all_dataset
-raw_data_path = 'D:/Doctoral_Programs/machineLearning-master/dataset/KI/original_score_all.csv'
+raw_data_path = './original_score_all.csv'
 df = pd.read_csv(raw_data_path)
 
 df.columns=['ID', 'score_max', 'score_mean', 'score_median', 'class']
@@ -1064,7 +1064,7 @@ from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 
 rand_state = np.random.RandomState(32)
 
-raw_data_path = 'D:/Doctoral_Programs/machineLearning-master/dataset/KI/original_score_all.csv'
+raw_data_path = './original_score_all.csv'
 
 df = pd.read_csv(raw_data_path)
 
@@ -1201,7 +1201,7 @@ subsample_n = -1
 
 ```python
 # set path to dataset
-raw_data_path = 'D:/Doctoral_Programs/machineLearning-master/dataset/KI/original_score_all.csv'
+raw_data_path = './original_score_all.csv'
 
 df = pd.read_csv(raw_data_path)
 
