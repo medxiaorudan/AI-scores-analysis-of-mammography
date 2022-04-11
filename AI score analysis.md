@@ -1226,27 +1226,6 @@ X_test = pd.DataFrame(scaler.transform(X_test), columns = X_test.columns)
 ```
 
 
-```python
-len(X_train)
-```
-
-
-
-
-    521
-
-
-
-
-```python
-len(X_test)
-```
-
-
-
-
-    257
-
 
 
 # Find Best Parameters
