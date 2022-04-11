@@ -1772,33 +1772,6 @@ classifiers
 
 
 
-```python
-len(X_train)
-
-```
-
-
-
-
-    521
-
-
-
-
-```python
-len(X_test)
-
-```
-
-
-
-
-    257
-
-
-
-
-```python
 # re-run the model with optimum k over different training set sizes & plot
 # build a dataframe containing the results of these experiments
 n_training = range(70,y_train.shape[0],100)
