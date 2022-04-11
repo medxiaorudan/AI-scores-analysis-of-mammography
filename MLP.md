@@ -191,7 +191,7 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
 # set path to all_dataset
-raw_data_path = 'D:/Doctoral_Programs/machineLearning-master/dataset/KI/original_score_all.csv'
+raw_data_path = './original_score_all.csv'
 df = pd.read_csv(raw_data_path)
 
 df.columns=['ID', 'score_max', 'score_mean', 'score_median', 'class']
