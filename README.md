@@ -6,7 +6,7 @@ This repository contains data from mammography exams along with AI scores for th
 
 ## Dataset Description
 
-- **Data Source**: The dataset is provided in a CSV sheet.
+- **Data Source**: The dataset is provided in a [CSV file](https://github.com/medxiaorudan/AI-scores-analysis-of-mammography/blob/main/data/anon_dataset_POSTDOC_TASK_220323.csv).
 - **Content**: Each row in the CSV corresponds to one mammography image. Typically, one exam consists of four images since two views (CC and MLO) of each breast are acquired during screening.
 - **Identification**: Images from the same exam can be identified by matching the `anon_patient-id` (indicating the same person) and the `exam_date`.
 - **AI Scores**: An AI model has processed all images and produced a score per breast. For both the CC and MLO images of the right breast, there's a single score, and similarly for the left breast.
